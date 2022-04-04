@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50px 100px;
+}
+
+.grid div {
+    text-align: center;
+    background-color: rgb(200, 224, 224);
+    padding: 1em;
+}
+
+.grid div:hover {
+    border: 1px solid darkorchid;
+}
