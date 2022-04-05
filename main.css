@@ -1,9 +1,9 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: minmax(100px auto);
+    grid-auto-rows: minmax(100px auto);
     gap: 1em;
-    justify-items: stretch;
+    align-items: stretch;
   
     /* grid-template-columns: 1fr 1fr 1fr ; */
     /* grid-template-columns: 50% 50%;
@@ -13,7 +13,20 @@
     
 }
 
+.caja1{
+    justify-self: start;
+}
 
+.caja2{
+    justify-self: end;
+}
+.caja3{
+    justify-self: right;
+}
+
+.caja4{
+    justify-self: center;
+}
 
 
 
