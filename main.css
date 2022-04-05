@@ -1,22 +1,26 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-color: aliceblue;
-}
-
 .grid {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50px 100px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: minmax(100px auto);
+    gap: 1em;
+    justify-items: stretch;
+  
+    /* grid-template-columns: 1fr 1fr 1fr ; */
+    /* grid-template-columns: 50% 50%;
+    grid-template-rows: auto 100px; */
+    /* gap: 5px; para las columnas*/
+    /* row-gap: 5px; para las filas*/
+    
 }
 
-.grid div {
-    text-align: center;
-    background-color: rgb(200, 224, 224);
+
+
+
+
+.grid > div{
+    background: rgb(197, 193, 193);
     padding: 1em;
 }
-
-.grid div:hover {
-    border: 1px solid darkorchid;
+.grid > div:hover{
+    border: 1px solid yellow;
 }
